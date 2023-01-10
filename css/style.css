@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Arial','sem-serif';
+}
+
+body{
+    background-color: black;
+}
+
+main{
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(13, 211, 226);
+}
+
+header .title{
+    text-align: center;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    padding: 8px 0;
+    color: white;
+}
+
+section.inscricao{
+    background-image: url("../imagens/people.jpg");
+    background-size: cover;
+}
+
+.clear{
+    clear: both;
+}
+
+
+div.formulario{
+    float: right;
+    max-width: 320px;
+    margin: 30px;
+    padding: 22px;
+    background-color: rgba(255, 255, 255, 0.612);
+}
+
+div.formulario h2{
+    font-size: 25px;
+}
+
+div.formulario p{
+    font-size: 17px;
+    margin: 15px 0;
+}
+
+div.formulario input, select{
+    width: 100%;
+    font-size: 17px;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+div.formulario input[type=submit]{
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: rgb(13, 211, 226);
+}
+
+div.formulario input[type=submit]:hover{
+    background-color: rgb(0, 130, 139);
+}
+
+div.formulario select{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    background-image: url('../imagens/arrow.jpg');
+    background-repeat: no-repeat;
+
+    background-position: calc(100% - 10px) center;
+}
+
+footer{
+    background-color: #202121;
+    padding: 40px;
+    text-align: center;
+}
+
+.picture{
+    width: 160px;
+}
+
+div.text{
+    max-width: 40%;
+    display: inline-block;
+    text-align: left;
+    margin-left: 40px;
+    color: white;
+
+}
+
+div.text p, div.text h2{
+    margin-bottom: 20px;
+}
+
+div.text h2{
+    font-size: 24px;
+}
+
+
+
+@media screen and (max-width:750px){
+    header .title{
+        font-size: 20px;
+    }
+
+    section.inscricao{
+        padding: 30px;
+    }
+
+    section.inscricao div.formulario{
+        float: none;
+        margin: auto;
+        border-radius: 12px;
+    }
+
+    div.formulario form input, select{
+        padding-left: 15px;
+        border: none;
+        border-radius: 25px;
+    }    
+
+    footer img.picture{
+        max-width: 300px;
+        width: 100%;
+        border-radius: 40px;
+    }
+
+    footer div.text{
+        max-width: 100%;
+        margin: 25px 0;
+    }
+
+    footer div.text h2{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:550px){
+    header .title{
+        font-size: 15px;
+    }
+    
+    section.inscricao{
+        padding: 20px;
+    }
+
+    section.inscricao div.formulario{
+        float: none;
+        margin: auto;
+        border-radius: 15px;
+    }
+
+    div.formulario h2{
+        font-size: 22px;
+    }
+
+    div.formulario p{
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+
+    div.formulario form input, select{
+        padding-left: 15px;
+        border: none;
+        border-radius: 25px;
+    }
+
+    footer img.picture{
+        max-width: 250px;
+        width: 100%;
+        border-radius: 40px;
+    }
+
+    footer div.text{
+        max-width: 100%;
+        margin: 25px 0;
+    }
+
+    footer div.text h2{
+        text-align: center;
+    }
+}
